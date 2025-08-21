@@ -1,11 +1,5 @@
 ﻿namespace C44_G02_EF02.Models
-{/*
-  ID INT PK.
-• Duration INT NOT NULL CHECK (Duration > 0).
-• Name NVARCHAR(100) NOT NULL UNIQUE.
-• Description NVARCHAR(255) NULL.
-• Top_ID INT FK NOT NULL → references Topic(ID).
-  */
+{
     public class Course
     {
         public int ID { get; set; }

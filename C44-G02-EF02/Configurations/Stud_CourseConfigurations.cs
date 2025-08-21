@@ -6,10 +6,8 @@
         {
             builder.ToTable("Stud_Course");
 
-            // Composite Primary Key
             builder.HasKey(sc => new { sc.Stud_ID, sc.Course_ID });
 
-            // Relations
             builder.HasOne(sc => sc.Student)
                    .WithMany(s => s.Stud_Courses)
                    .HasForeignKey(sc => sc.Stud_ID)
@@ -20,11 +18,9 @@
                    .HasForeignKey(sc => sc.Course_ID)
                    .OnDelete(DeleteBehavior.Cascade);
 
-            // Grade Property
             builder.Property(sc => sc.Grade)
                    .HasColumnType("int");
 
-            // Check Constraint for Grade
             builder.HasCheckConstraint("CK_Stud_Course_Grade", "Grade BETWEEN 0 AND 100");
         }
     }

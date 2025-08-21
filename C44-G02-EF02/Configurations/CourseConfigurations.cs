@@ -22,12 +22,6 @@
 
             builder.Property(c => c.Description)
                 .HasMaxLength(255);
-
-            //builder.HasOne<Topic>()
-            //       .WithMany()
-            //       .HasForeignKey("Top_ID")
-            //       .OnDelete(DeleteBehavior.Cascade)
-            //       .IsRequired();
         }
     }
 }

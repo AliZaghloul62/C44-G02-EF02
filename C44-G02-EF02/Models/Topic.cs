@@ -1,6 +1,4 @@
-﻿using System.Xml.Linq;
-
-namespace C44_G02_EF02.Models
+﻿namespace C44_G02_EF02.Models
 {
     //ID INT PK.
     // Name NVARCHAR(100) NOT NULL UNIQUE.

@@ -1,8 +1,5 @@
 ﻿namespace C44_G02_EF02.Models
 {
-    //Instructor [top to identify the dep head
-    //HiringDate DATE NOT NULL CHECK (HiringDate <= GETDATE()).
-    // has many instructors
     public class Department
     {
         public int ID { get; set; }

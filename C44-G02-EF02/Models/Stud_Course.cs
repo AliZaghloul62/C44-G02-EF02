@@ -1,6 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace C44_G02_EF02.Models
+﻿namespace C44_G02_EF02.Models
 {
     public class Stud_Course
     {
